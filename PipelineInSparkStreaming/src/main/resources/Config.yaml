@@ -1,0 +1,16 @@
+Environment: Dev
+SourceType : Kafka
+KafkaTopic: ["topic1-emp","topic1-dept"]
+KafkaSchemaDataSetName: ["emp.avsc","dept.avsc"]
+postgresTopic: ["postgres.mydb.dept","postgres.mydb.emp"]
+NodeJsTopic: ["nodejs.mydb.emp"]
+outputOptions:
+  NoSqlDb: Cassandra
+  DB: Mysql
+  FileLoc: gs://shuva-buc
+  Bigquery:
+  KibanaIndex: Y
+FileConversion: CsvToText
+explain: true
+loglevels: Info
+appName: GcpDataFlow
